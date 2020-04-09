@@ -5,7 +5,6 @@ services:
     container_name: Aria2
     image: p3terx/aria2-pro:latest
     network_mode: "host"
-    log-opt: max-size=1m
     environment:
       - PUID=1000
       - PGID=1000
