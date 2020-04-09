@@ -1,14 +1,11 @@
-version: "3"
+version: "3.7"
 
 services:
   Aria2:
     container_name: Aria2
     image: p3terx/aria2-pro:latest
+    network_mode: "host"
     volumes:
       - /aria2/config:/config
       - /aria2/downloads:/downloads
-    ports:
-      - "6800:6800"
-      - "6888:6888"
-      - "6888:6888/udp"
     restart: unless-stopped
