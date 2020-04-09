@@ -6,8 +6,8 @@ services:
     image: p3terx/aria2-pro:latest
     network_mode: host
     environment:
-      - PUID=$UID
-      - PGID=$GID
+      - PUID=1000
+      - PGID=1000
       - RPC_PORT=6800
       - LISTEN_PORT=6888
       - DISK_CACHE=<256M>
