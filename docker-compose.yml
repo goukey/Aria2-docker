@@ -4,10 +4,10 @@ services:
   Aria2:
     container_name: Aria2
     image: p3terx/aria2-pro:latest
-    network_mode: "host"
+    network_mode: host
     environment:
-      - PUID=1000
-      - PGID=1000
+      - PUID=$UID
+      - PGID=$GID
       - RPC_PORT=6800
       - LISTEN_PORT=6888
       - DISK_CACHE=<256M>
