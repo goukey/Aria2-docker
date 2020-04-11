@@ -10,4 +10,7 @@ services:
       - /aria2/downloads:/downloads
     env_file:
       - config.env
+    expose:
+      - 6800
+      - 6888
     restart: unless-stopped
